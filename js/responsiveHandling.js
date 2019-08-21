@@ -5,6 +5,17 @@ function searchblock()
     document.getElementById("searchBtn").style.backgroundColor="black";
     document.getElementById("searchBtn").style.color="white";
 }
+function showSearchBar()
+{
+
+    if(document.getElementById("searchBarHidden").style.display==="none")
+    {
+        document.getElementById("searchBarHidden").style.display="block";
+    }
+    else{
+        document.getElementById("searchBarHidden").style.display="none";
+    }
+}
 function dropdown(obj)
 {
     if(obj.nextElementSibling.style.display==="none")

@@ -183,7 +183,7 @@
                 </div>
             </div>
             <div class="header-below-search">
-                <i class="fa fa-search"></i>
+                <i class="fa fa-search" onclick="showSearchBar()" ></i>
             </div>
             <div class="bg-dark-grey header-right-signin">
                 <i class="fa fa-user"></i>
@@ -195,7 +195,7 @@
             </div>
         </div>
         <!-- header below ends here -->
-        <div class="search-bar-hidden">
+        <div class="search-bar-hidden" id="searchBarHidden">
             <div class="search-block bg-light-grey">
                 <div class="block-item-box">
                     <input onfocus="searchblock()" type="text" name="searchInput" id="searchInput" placeholder="Search">
