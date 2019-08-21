@@ -156,7 +156,7 @@ i{
     display: none;
   }
   .hamburger-content{
-    top:250px;
+    top:222px;
   }
   .press-news-section>.news-content{
     display: grid;
@@ -260,6 +260,23 @@ height:30%;
   }
   .showcase-content>button{
     font-size: 2em;
+  }
+  .header-below>.header-below-search{
+  padding: 10px;
+    padding-top: 40px;
+  }
+  .header-below>.header-right-contact,.header-below>.header-right-signin{
+    text-align: center;
+    padding: 0;
+    padding-top: 35px;
+  }
+  .header-below>.header-below-search,.header-below>.header-right-contact
+  ,.header-below>.header-right-signin{
+    font-size: 12px;
+  }
+   .header-below>.header-right-contact>i
+  ,.header-below>.header-right-signin>i{
+    font-size: 30px;
   }
 }
 
