@@ -1,0 +1,504 @@
+/* CSS By ritvik */
+
+body {
+    margin: 0;
+    font-family: segoe ui;
+}
+
+.wrapper {
+    margin: 0;
+}
+
+
+/*global styling */
+
+button {
+    cursor: pointer;
+}
+
+.bg-black {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+.bg-light-grey {
+    background-color: rgb(133, 130, 130);
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bg-blue {
+    background-color: rgb(17, 151, 240);
+    color: white;
+}
+
+.bg-dark-grey {
+    background-color: grey;
+    color: white;
+}
+
+.search-block::after,
+.header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*global styling */
+
+.header {
+    display: flex;
+}
+
+.header-left-menu {
+    margin-left: 2%;
+    width: 65%;
+}
+
+.header-left-menu a {
+    display: inline-block;
+    margin-left: 3%;
+}
+
+.header-left-menu,
+.logo {
+    margin: 40px auto;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.header-right-section {
+    float: left;
+    width: 500px;
+    display: flex;
+}
+
+.search-block {
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+}
+
+.block-item-box {
+    margin-left: 20px;
+}
+
+.search-block input,
+.search-block button {
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px auto;
+    background-color: rgb(133, 130, 130);
+    ;
+    border-radius: 2px;
+    float: left;
+}
+
+.search-block input {
+    width: 210px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.search-block button {
+    color: white;
+    height: 50px;
+    width: 50px;
+    font-size: 1.2em;
+}
+
+.header-right-signin,
+.header-right-contact {
+    margin-left: 2px;
+    text-align: center;
+    width: 80px;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.header-right-contact i {
+    font-size: 40px;
+}
+
+.header-right-signin i {
+    font-size: 40px;
+}
+
+.header-second {
+    display: flex;
+}
+
+.header-second-left-section {
+    width: 800px;
+    padding: 20px 0px;
+}
+
+.header-second-left-section a {
+    color: black;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header-second-right-section {
+    background-color: lightgray;
+    width: 550px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.header-second-right-section a {
+    color: black;
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+/*showcase section css */
+
+.showcase {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: url("../img/registration-homepage-promo.png");
+    background-repeat: no-repeat;
+    color: white;
+    background-position-x: -50px;
+    line-height: 20px;
+    background-size: conver;
+    box-shadow: 10px 200px 500px black inset;
+}
+
+.showcase-content {
+    text-align: center;
+}
+
+.hero-text {
+    font-size: 6em;
+}
+
+.tagline {
+    font-size: 2em;
+}
+
+.showcase-content>button {
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+    padding: 1em;
+    width: 250px;
+    box-shadow: 4px 4px 4px grey;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1.2em
+}
+
+
+/*showcase section css */
+
+
+/*news press section */
+
+.press-news-section {
+    padding: 5px;
+}
+
+.news-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.highlight {
+    display: block;
+    width: 80px;
+    padding: 2px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(17, 151, 240);
+}
+
+.news-box {
+    padding-left: 15px;
+    height: 150px;
+    border-right: .5px solid whitesmoke;
+}
+
+.news-box:last-child,
+.news-box:nth-child(3) {
+    border-right: none;
+}
+
+.sales-quotation {
+    text-align: center;
+    position: relative;
+    top: -50px;
+    border-radius: 2px;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.sales-quotation button {
+    border: 2px solid white;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: segoe ui;
+    border-radius: 2px;
+}
+
+
+/*news press section */
+
+
+/*product section */
+
+.newproducts-section {
+    margin-top: 30px;
+    padding: 50px;
+}
+
+.newproducts-section-content {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product-card {
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.product-card p {
+    width: 98%;
+    word-wrap: normal;
+}
+
+.product-image img {
+    width: 100%;
+    height: 200px;
+}
+
+
+/*product section */
+
+
+/* stay connected section */
+
+.subscribe-section {
+    border: solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    background-image: url("../img/registration-homepage-promo-reverse.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.subscribe-section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px;
+}
+.left-sub-section {
+    line-height: 18px;
+    border-right: 1px solid white;
+    padding-right: 90px;
+}
+
+.left-sub-section button {
+    border: 2px solid white;
+    outline: none;
+    padding: 12px;
+    font-size: 1em;
+}
+
+
+/* stay connected section */
+
+
+/*data section */
+
+.data-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+.detail-box::after,
+.data-section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.data-card {
+    box-shadow: 10px 10px 20px grey;
+    padding-left: 10px;
+    margin-left: 2%;
+    min-height: 1200px;
+    border-radius: 3px;
+    border-top: 4px solid blue;
+}
+
+.data-card h1 {
+    font-weight: 1.5;
+}
+
+.intro {
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
+}
+
+.data-card a {
+    color: blue;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.photo-large img,
+.photo-small img {
+    width: 100%;
+}
+
+.photo-large img {
+    height: 250px;
+}
+
+.photo-large {
+    width: 70%;
+}
+
+.photo-small {
+ }
+
+.intro a {
+    font-size: 1.5em;
+}
+
+.detail-box {
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.detail-box-details {
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.detail-box .photo-small {
+ }
+/*data section */
+
+/* interview section */
+.interviews-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+    padding: 30px;
+}
+.blank-box{
+    border: solid;
+    margin-top: 20px;x
+}
+.interview-content{
+    text-align: center;
+    padding: 17px;
+    border-right:1px solid;
+}
+.interview-content a{
+    color: blue;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.interview-content:last-child{
+    border-right: none;
+}
+.photo-profile{
+    width: 90%;
+    border-radius: 50%;
+    margin: auto;
+}
+.photo-profile img{
+    width: 100%;
+    border-radius: 50%;
+}
+/* interview section */
+
+
+
+/* about site setion */
+.about-site-section{
+display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.about-site-section>.box>ul{
+    list-style-type: none;
+}
+.box>ul>a{
+    display: block;
+    margin-top: 20px;
+}
+.about-site-section::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box h3{
+    text-transform: uppercase;
+    text-align: left;
+}
+.box{
+    padding: 10px;
+}
+/* about site setion */
+
+/*footer section */
+.footer-section{
+    padding: 20px;
+    display: flex;
+    background-color:black;
+}
+.footer-section>.footer-logo{
+    margin-top: 10px;
+}
+.footer-section a{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.footer-section p{
+    color: grey;
+    display: inline-block;
+    margin-left: 30px;
+ }
+
+/*footer section */

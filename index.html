@@ -1,0 +1,792 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/homeStyle.css">
+    <link rel="stylesheet" href="./css/breakpoints.css">
+    <title>Homepage | Cloned Ritvik</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header section starts from here -->
+        <div class="header bg-black">
+            <!-- heder left sections starts from here -->
+            <div class="logo">
+                <img src="./img/logo-white.svg" alt="Logo-Brand">
+            </div>
+            <!-- ONLY SHOWN WHEN BREAKPOINTS ARE BROKEN 1164px -->
+            <div class="hamburger-menu-section">
+                <div class="ham-menu" onclick="showHamburgerContent(this)">
+                    <i class="fa fa-bars"> </i>
+                    <p>MENU</p>
+                </div>
+            </div>
+            <div class="hamburger-content" id="hamburger-content">
+                <div onclick="dropdown(this)">characterization <i class="fa fa-chevron-right"></i></div>
+                <!-- characterization content -->
+                <div class="hidden">
+                    <div>characterization </div>
+                    <ul>
+                        <a href="">
+                            <li>Sesimic</li>
+                        </a>
+                        <a href="">
+                            <li>Surface and Downhole Logging</li>
+                        </a>
+                        <a href="">
+                            <li>Reservoir Testing</li>
+                        </a>
+                        <a href="">
+                            <li>Rock and Fluid Analysis</li>
+                        </a>
+                        <a href="">
+                            <li>Interpretation and Analysis</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div onclick="dropdown(this)">drilling <i class="fa fa-chevron-right"></i></div>
+                <!-- drilling content -->
+                <div class="hidden">
+                    <div>Drilling</div>
+                    <ul>
+                        <a href="">
+                            <li>Rigs and Equipment</li>
+                        </a>
+                        <a href="">
+                            <li>Bottomhole Assemblies</li>
+                        </a>
+                        <a href="">
+                            <li>Drilling Fluids and Well Cementing</li>
+                        </a>
+                        <a href="">
+                            <li>Surface and Downhole Logging</li>
+                        </a>
+                    </ul>
+                </div>
+                <div onclick="dropdown(this)">completions <i class="fa fa-chevron-right"></i></div>
+                <!-- completions content -->
+                <div class="hidden">
+                    <div>Completions </div>
+                    <ul>
+                        <a href="">
+                            <li>Well Completions</li>
+                        </a>
+                        <a href="">
+                            <li>Fluids and Tools</li>
+                        </a>
+                        <a href="">
+                            <li>Artificial Lift</li>
+                        </a>
+                        <a href="">
+                            <li>Stimulation</li>
+                        </a>
+                        <a href="">
+                            <li>Surface and Downhole Logging</li>
+                        </a>
+                    </ul>
+                </div>
+                <div onclick="dropdown(this)">production <i class="fa fa-chevron-right"></i></div>
+                <!-- production content -->
+                <div class="hidden">
+                    <div>Production</div>
+                    <ul>
+                        <a href="">
+                            <li>Processing and Sepration</li>
+                        </a>
+                        <a href="">
+                            <li>Production Systems</li>
+                        </a>
+                        <a href="">
+                            <li>Production Chemicals</li>
+                        </a>
+                        <a href="">
+                            <li>Midstream</li>
+                        </a>
+                    </ul>
+                </div>
+                <div onclick="dropdown(this)">intervention <i class="fa fa-chevron-right"></i></div>
+                <!-- interventions content -->
+                <div class="hidden">
+                    <div>Interventions </div>
+                    <ul>
+                        <a href="">
+                            <li>Coiled Tubing Intervention</li>
+                        </a>
+                        <a href="">
+                            <li>Slickline and Wireline Intervention</li>
+                        </a>
+                        <a href="">
+                            <li>Well Interventions</li>
+                        </a>
+                        <a href="">
+                            <li>Subsea Intervention</li>
+                        </a>
+                        <a href="">
+                            <li>Remedial Services</li>
+                        </a>
+                        <a href="">
+                            <li>Integrated Well Abandonment</li>
+                        </a>
+                    </ul>
+                </div>
+                <div>Insights</div>
+                <div>Resource Library</div>
+                <div>Software</div>
+                <div class="hamburger-content-dark">
+                    <a href="">Who We Are</a>
+                    <a href="">Newsroom</a>
+                    <a href="">Careers</a>
+                </div>
+            </div>
+
+            <div class="header-left-menu">
+                <a class="header-left-menu-items" href="#">Who We Are</a>
+                <a class="header-left-menu-items" href="#">Newsroom</a>
+                <a class="header-left-menu-items" href="#">Careers</a>
+                <a class="header-left-menu-items" href="#">Investors</a>
+                <a class="header-left-menu-items" href="#">Global Stewardship</a>
+            </div>
+            <!-- header left ends here -->
+            <div class="header-right-section">
+                <div class="search-block bg-light-grey">
+                    <div class="block-item-box">
+                        <input onfocus="searchblock()" type="text" name="searchInput" id="searchInput"
+                            placeholder="Search">
+                        <button id="searchBtn"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="bg-dark-grey header-right-signin">
+                    <i class="fa fa-user"></i>
+                    <p>SIGN IN</p>
+                </div>
+                <div class="bg-blue header-right-contact">
+                    <i class="fa fa-envelope"></i>
+                    <p>CONTACT</p>
+                </div>
+            </div>
+        </div>
+        <!-- header ends here -->
+        <!-- only shown when breakpoint 924px is brken -->
+        <div class="header-below">
+            <div class="header-below-hamburger">
+                <div class="ham-menu" onclick="showHamburgerContent(this)">
+                    <i class="fa fa-bars"> </i>
+                    <p>MENU</p>
+                </div>
+            </div>
+            <div class="header-below-search">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="bg-dark-grey header-right-signin">
+                <i class="fa fa-user"></i>
+                <p>SIGN IN</p>
+            </div>
+            <div class="bg-blue header-right-contact">
+                <i class="fa fa-envelope"></i>
+                <p>CONTACT</p>
+            </div>
+        </div>
+        <!-- header below ends here -->
+        <div class="search-bar-hidden">
+            <div class="search-block bg-light-grey">
+                <div class="block-item-box">
+                    <input onfocus="searchblock()" type="text" name="searchInput" id="searchInput" placeholder="Search">
+                    <button id="searchBtn"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- header2 starts from here -->
+        <div class="header-second">
+            <div class="header-second-left-section">
+                <a class="header-second-left-menu-items" href="#">characterization</a>
+                <a class="header-second-left-menu-items" href="#">drilling</a>
+                <a class="header-second-left-menu-items" href="#">completions</a>
+                <a class="header-second-left-menu-items" href="#">production</a>
+                <a class="header-second-left-menu-items" href="#">intervention</a>
+            </div>
+            <div class="header-second-right-section">
+                <a class="header-second-right-menu-items" href="#">Insights</a>
+                <a class="header-second-right-menu-items" href="#">Resource Library</a>
+                <a class="header-second-right-menu-items" href="#">Software</a>
+            </div>
+        </div>
+        <!-- header second ends here -->
+        <div class="showcase">
+            <div class="showcase-content">
+                <h1 class="hero-text">
+                    Stay Connected
+                </h1>
+                <h2 class="tagline">
+                    Update your registration on the new SLB.com
+                </h2>
+                <button>STAY IN THE KNOW <i class="fa fa-chevron-right"> </i></button>
+            </div>
+        </div>
+        <!-- showcase ends here -->
+        <!-- press section starts from here -->
+        <div class="press-news-section bg-blue">
+            <h1>Latest Press Releases</h1>
+            <div class="news-content">
+                <div class="news-box">
+                    <span class="highlight">7/23/2019</span>
+                    <a href="#">
+                        Chevron Awards OneSubsea 20-year Subsea Equipment and Services Master Contract for the Gulf of
+                        Mexico
+                    </a>
+
+                </div>
+                <div class="news-box">
+                    <span class="highlight">7/19/2019</span>
+                    <a href="#">
+                        Schlumberger Appoints Olivier Le Peuch as CEO
+                    </a>
+
+                </div>
+                <div class="news-box">
+                    <span class="highlight">7/19/2019</span>
+                    <a href="#">
+                        Schlumberger Announces Second-Quarter 2019 Results
+                    </a>
+                </div>
+                <div class="sales-quotation bg-black">
+                    <h1>Simplified Sales</h1>
+                    <p>
+                        Need a shortcut to products and equipment? Check out our products site.
+                    </p>
+                    <button class="bg-blue">BROWSE PRODUCT SITE</button>
+                </div>
+            </div>
+        </div>
+        <!-- new product section stars fro here -->
+        <div class="newproducts-section">
+            <h1>New Product & Service Highlights</h1>
+            <div class="newproducts-section-content">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/namibe-basin-licensing-round-card.jpg" alt="namibibasic">
+                    </div>
+                    <a href="#">Angola Namibe Basin 2019 Licensing Round</a>
+                    <h2>54,000 km in the Namibe and Benguela Basins</h2>
+                    <p>
+                        Represents an enormous opportunity to enter this frontier basin during its early stages of
+                        development.
+                    </p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/lithoflex-card.jpg" alt="litho">
+                    </div>
+                    <a href="#">LithoFlex</a>
+                    <h2>Multifactor shale-cuttings evaluation-while-drilling service</h2>
+                    <p>
+                        Characterize unconventional reservoirs in near-real-time to support operational decisions and
+                        minimize risk.
+                    </p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/santos-card.jpg" alt="brazilSantos">
+                    </div>
+                    <a href="#">Brazil Transfer of Rights Bid Round for Excess Volumes</a>
+                    <h2>High-definition 3D surveys for blocks in the Santos Basin</h2>
+                    <p>
+                        Enhance your prospectivity assessment of presalt fields in the Santos Basin.
+                    </p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/cmr-magniphi-1-combo.jpg" alt="CMRMapping">
+                    </div>
+                    <a href="#">CMR-MagniPHI</a>
+                    <h2>High-definition NMR service</h2>
+                    <p>
+                        Unlock the T1 dimension to provide the most accurate lithology-independent porosity and fluids
+                        mapping for the smallest pores.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- subscribe section for newsletter -->
+        <div class="subscribe-section">
+            <div class="subscribe-section-content">
+                <div class="left-sub-section">
+                    <h2>Stay Connected</h2>
+                    <h3>Update your registration on the new slb.com</h3>
+                    <button class="bg-blue">CLICK HERE <i class="fa fa-chevron-right"></i></button>
+                </div>
+                <div class="right-sub-section">
+                    <ul class="benifits-list">
+                        <li>Receive e-mail alerts on curated content</li>
+                        <li>Be the first to know about commercializing technology</li>
+                        <li>Stay up to date about the latest industry events</li>
+                        <li>Customize the topics and categories you’re interested in</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- data section starts here -->
+        <div class="data-section">
+            <!-- data card section -->
+            <div class="data-card">
+                <div class="intro">
+                    <h1>Data-Driven Operations</h1>
+                    <div class="photo-large">
+                        <img src="./img/users/trygve-randen-card.jpg" alt="trygve">
+                    </div>
+                    <a href="#">Trygve Randen</a>
+                    <p>
+                        Trygve Randen with Schlumberger discusses the oil and gas industry’s pivot to a more open
+                        future.
+                    </p>
+                </div>
+                <div class="detail-box">
+                    <div class="photo-small">
+                        <img src="./img/datacard/pcl-and-lift-iq-iraq-cs-c.jpg" alt="">
+                    </div>
+                    <div class="detail-box-details">
+                        <a href="#">
+                            Remote ESP Optimization Reduces Power Consumption by 28% and 34% in Two Iraq Wells</a>
+                        <p>
+                            PCL and Lift IQ services overcome lack of well test data from remote wellsites.
+                        </p>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="photo-small">
+                        <img src="./img/users/Constantinescu_Raluca-sq.jpg" alt="">
+                    </div>
+                    <div class="detail-box-details">
+                        <a href="#">
+                            Raluca Constantinescu</a>
+                        <p>
+                            Schlumberger digital expert Raluca Constantinescu discusses the Concert well testing live
+                            performance ecosystem.
+                        </p>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="photo-small">
+                        <img src="./img/datacard/digital-technology-enablement-video-card.jpg" alt="">
+                    </div>
+                    <div class="detail-box-details">
+                        <a href="#">
+                            Digital Technology Enablement | What is Next is Now</a>
+                        <p>
+                            Unlocking value in E&P
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- data card section -->
+            <div class="data-card">
+                <div class="intro">
+                    <h1>Drilling</h1>
+                    <div class="photo-large">
+                        <img src="./img/datacard/stingblade-east-basin-ecuador-cs-c.jpg" alt="">
+                    </div>
+                    <a href="">StingBlade Bit Reduces Rig Time by 64 Days and Saves USD 7,000,000, Ecuador</a>
+                    <p>
+                        Outperformed the operator’s expectations and the average performance of offset wells in Block 61
+                        of the East Basin in Ecuador.
+                    </p>
+                </div>
+                <div class="detail-box">
+                    <div class="photo-small">
+                        <img src="./img/users/wiley-long-squarecard.jpg" alt="">
+                    </div>
+                    <div class="detail-box-details">
+                        <a href="#">Wiley Long</a>
+                        <p>
+                            Wiley Long, Smith Bits Product Champion, discusses how operators are using the Blade Family
+                            of bits to reshape their drilling performance.
+                        </p>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="photo-small">
+                        <img src="./img/datacard/AxeBlade-East-Siberia-cs-a.jpg" alt="">
+                    </div>
+                    <div class="detail-box-details">
+                        <a href="#">
+                            AxeBlade Diamond Element Bit Design Delivers 92% Higher ROP, Drills 6-in Section in One
+                            Run</a>
+                        <p>
+                            Innovative bit with 13-mm Axe elements saves approximately 40 hours of rig time in
+                            Yaraktinskoe field.
+                        </p>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="photo-small">
+                        <img src="./img/datacard/colossus-liner-drilling-deepwater-gom-cs-a.jpg" alt="" id="drill">
+                    </div>
+                    <div class="detail-box-details">
+                        <a href="#">
+                            Drilling with Liner Rescues Well in Deepwater Gulf of Mexico and Saves at Least USD 20
+                            Million</a>
+                        <p>
+                            Eliminating a dedicated liner run through a high-loss gassy salt zone reduced rig time by
+                            multiple days.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- data card section -->
+            <div class="data-card">
+                <div class="intro">
+                    <h1>Stimulation</h1>
+                    <div class="photo-large">
+                        <img src="./img/datacard/broadband-shield-nis-serbia-cs-a.jpg" alt="">
+                    </div>
+                    <a href="">BroadBand Shield Service Boosts Oil Production up to 3,000% Near Water Zones,
+                        Serbia</a>
+                    <p>
+                        Improve oil production—but avoid water production—from mature wells in a tight sandstone
+                        formation with weak or thin barriers to nearby water zones.
+                    </p>
+                </div>
+                <div class="detail-box">
+                    <div class="photo-small">
+                        <img src="./img/datacard/openpath-reach-card.jpg" alt="">
+                    </div>
+                    <div class="detail-box-details">
+                        <a href="#">OpenPath Reach</a>
+                        <p>
+                            Extended-contact stimulation service
+                        </p>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="photo-small">
+                        <img src="./img/datacard/scalesolv-iraq-cs-card.jpg" alt="">
+                    </div>
+                    <div class="detail-box-details">
+                        <a href="#">
+                            ScaleSOLV Dissolver Saves USD 13 Million by Eliminating Workovers and ESP Damage,
+                            Iraq</a>
+                        <p>
+                            Engineered approach with ScaleSOLV dissolver replaces HCl treatments that failed to dissolve
+                            calcium sulfate scale while damaging ESPs and the sandstone formation.
+                        </p>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="photo-small">
+                        <img src="./img/datacard/jpt-frac-hits-card.jpg" alt="">
+                    </div>
+                    <div class="detail-box-details">
+                        <a href="#">
+                            To Solve Frac Hits, Unconventional Engineering Must Revolve Around Them</a>
+                        <p>
+                            Significant advancements have been made in industry understanding, execution, and
+                            optimization of multifractured completions, but more complexity and uncertainty results from
+                            interactions between infill and existing wells due to depletion and connectivity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- interview section starts here -->
+        <div class="interviews-section">
+            <!-- interview box section -->
+            <div class="interview-content">
+                <div class="photo-profile">
+                    <img src="./img/users/wiley-long-squarecard.jpg" alt="wiley">
+                </div>
+
+                <a href="">Wiley Long</a>
+                <h2>Drilling Performance Insights</h2>
+                <p>
+                    Wiley Long, Smith Bits Product Champion, discusses how operators are using the Blade Family of bits
+                    to reshape their drilling performance.
+                </p>
+            </div>
+
+            <div class="interview-content">
+                <div class="photo-profile">
+                    <img src="./img/users/trygve-randen-card.jpg" alt="">
+                </div>
+                <a href="">Trygve Randen</a>
+                <h2>Rethinking Collaboration in the Oil and Gas Industry</h2>
+                <p>
+                    Trygve Randen with Schlumberger discusses the oil and gas industry’s pivot to a more open future.
+                </p>
+
+            </div>
+
+            <div class="interview-content">
+                <div class="photo-profile">
+                    <img src="./img/users/lees-rodionov-card.jpg" alt="">
+                </div>
+                <a href="">Lees Rodionov</a>
+                <h2>Environmental, Social, and Governance (ESG) Leadership</h2>
+                <p>
+                    Lees Rodionov, VP Global Stewardship, on Schlumberger global stewardship at Bloomberg’s Sustainable
+                    Business Summit.
+                </p>
+            </div>
+            <div class="interview-content">
+                <div class="photo-profile">
+                    <img src="./img/users/Constantinescu_Raluca-sq.jpg" alt="Raluca">
+                </div>
+                <a href="">Raluca Constantinescu</a>
+                <h2>Concert Well Testing Live Performance</h2>
+                <p>
+                    Schlumberger digital expert Raluca Constantinescu discusses the Concert well testing live
+                    performance ecosystem.
+                </p>
+            </div>
+        </div>
+        <!-- interview section ends here -->
+        <!-- shown when breakpoint is broken 924px -->
+        <div class="footer-dropdown" id="hamburger-content">
+            <div onclick="dropdown(this)">Our Sites<i class="fa fa-chevron-down"></i></div>
+            <!-- characterization content -->
+            <div class="footer-dropdown-content">
+                <ul>
+                    <a href="">
+                        <li>Locations</li>
+                    </a>
+                    <a href="">
+                        <li>Products</li>
+                    </a>
+                    <a href="">
+                        <li>OneSubsea</li>
+                    </a>
+                    <a href="">
+                        <li>NExT</li>
+                    </a>
+                    <a href="">
+                        <li>Extreme Engineering</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div onclick="dropdown(this)">Technical Challenges<i class="fa fa-chevron-down"></i></div>
+            <!-- characterization content -->
+            <div class="footer-dropdown-content">
+                <ul>
+                    <a href="">
+                        <li>Carbonates</li>
+                    </a>
+                    <a href="">
+                        <li>Deepwater Operations</li>
+                    </a>
+                    <a href="">
+                        <li>Enhanced Oil Recovery</li>
+                    </a>
+                    <a href="">
+                        <li>Geothermal</li>
+                    </a>
+                    <a href="">
+                        <li>Heavy Oil</li>
+                    </a>
+                    <a href="">
+                        <li>Unconventional Resources</li>
+                    </a>
+                </ul>
+            </div>
+            <div onclick="dropdown(this)">Business<i class="fa fa-chevron-down"></i></div>
+            <!-- characterization content -->
+            <div class="footer-dropdown-content">
+                <ul>
+                    <a href="">
+                        <li>Asset Consulting Services</li>
+                    </a>
+                    <a href="">
+                        <li>Carbon Services</li>
+                    </a>
+                    <a href="">
+                        <li>Geothermal Services</li>
+                    </a>
+                    <a href="">
+                        <li>Integrated Water Solutions</li>
+                    </a>
+                    <a href="">
+                        <li>NExT Oil and Gas Training</li>
+                    </a>
+                    <a href="">
+                        <li>Sensa Fiber Optic Monitoring</li>
+                    </a>
+                </ul>
+            </div>
+            <div onclick="dropdown(this)">Brands<i class="fa fa-chevron-down"></i></div>
+            <!-- characterization content -->
+            <div class="footer-dropdown-content">
+                <ul>
+                    <a href="">
+                        <li>Carbonates</li>
+                    </a>
+                    <a href="">
+                        <li>Deepwater Operations</li>
+                    </a>
+                    <a href="">
+                        <li>Enhanced Oil Recovery</li>
+                    </a>
+                    <a href="">
+                        <li>Geothermal</li>
+                    </a>
+                    <a href="">
+                        <li>Heavy Oil</li>
+                    </a>
+                    <a href="">
+                        <li>Unconventional Resources</li>
+                    </a>
+                </ul>
+            </div>
+            <div onclick="dropdown(this)">Resources<i class="fa fa-chevron-down"></i></div>
+            <!-- characterization content -->
+            <div class="footer-dropdown-content">
+                <ul>
+                    <a href="">
+                        <li>Oifield Glossary</li>
+                    </a>
+                    <a href="">
+                        <li>SDS MSDS Sheets</li>
+                    </a>
+                    <a href="">
+                        <li>Curve Mnemonic Dictionary</li>
+                    </a>
+                    <a href="">
+                        <li>Android APP Store</li>
+                    </a>
+                    <a href="">
+                        <li>Apple App Store</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <!-- about site section -->
+        <div class="about-site-section bg-black">
+            <div class="box">
+                <h3>Our Sites</h3>
+                <ul>
+                    <a href="">
+                        <li>Locations</li>
+                    </a>
+                    <a href="">
+                        <li>Products</li>
+                    </a>
+                    <a href="">
+                        <li>OneSubsea</li>
+                    </a>
+                    <a href="">
+                        <li>NExT</li>
+                    </a>
+                    <a href="">
+                        <li>Extreme Engineering</li>
+                    </a>
+                </ul>
+            </div>
+            <!-- class box ends here -->
+            <div class="box">
+                <h3>Technical Challenges</h3>
+                <ul>
+                    <a href="">
+                        <li>Carbonates</li>
+                    </a>
+                    <a href="">
+                        <li>Deepwater Operations</li>
+                    </a>
+                    <a href="">
+                        <li>Enhanced Oil Recovery</li>
+                    </a>
+                    <a href="">
+                        <li>Geothermal</li>
+                    </a>
+                    <a href="">
+                        <li>Heavy Oil</li>
+                    </a>
+                    <a href="">
+                        <li>Unconventional Resources</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Business</h3>
+                <ul>
+                    <a href="">
+                        <li>Asset Consulting Services</li>
+                    </a>
+                    <a href="">
+                        <li>Carbon Services</li>
+                    </a>
+                    <a href="">
+                        <li>Geothermal Services</li>
+                    </a>
+                    <a href="">
+                        <li>Integrated Water Solutions</li>
+                    </a>
+                    <a href="">
+                        <li>NExT Oil and Gas Training</li>
+                    </a>
+                    <a href="">
+                        <li>Sensa Fiber Optic Monitoring</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Brands</h3>
+                <ul>
+                    <a href="">
+                        <li>Cameron</li>
+                    </a>
+                    <a href="">
+                        <li>M-I SWACO</li>
+                    </a>
+                    <a href="">
+                        <li>Smith Bits</li>
+                    </a>
+                    <a href="">
+                        <li>WesternGeco</li>
+                    </a>
+                    <a href="">
+                        <li>Omni Seals</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Resources</h3>
+                <ul>
+                    <a href="">
+                        <li>Oifield Glossary</li>
+                    </a>
+                    <a href="">
+                        <li>SDS MSDS Sheets</li>
+                    </a>
+                    <a href="">
+                        <li>Curve Mnemonic Dictionary</li>
+                    </a>
+                    <a href="">
+                        <li>Android APP Store</li>
+                    </a>
+                    <a href="">
+                        <li>Apple App Store</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <!-- about site section ends here -->
+        <div class="footer-section">
+            <div class="footer-logo">
+                <img src="./img/logo-white.svg" alt="">
+            </div>
+            <a href="">Privacy</a>
+            <a href="">Terms of Services</a>
+            <a href="">Sitemap</a>
+            <p>&copy; 2019 Schlumberger Limited.</p>
+        </div>
+    </div>
+    <!-- wrapper ends here -->
+</body>
+
+</html>
+<script src="./js/responsiveHandling.js"></script>

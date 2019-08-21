@@ -1,0 +1,265 @@
+/* hamburger menu */
+i{
+  cursor: pointer;
+}
+.footer-dropdown{
+  display: none;
+}
+.footer-dropdown-content{
+  display: none;
+}
+.ham-menu{
+  padding: 10px;
+  margin-top:30px;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+.hamburger-menu-section{
+  display: none;
+  width: 13%;
+  margin-left: 10px;
+}
+.ham-menu i{
+  display: inline;
+}
+.ham-menu p{
+  display: inline;
+}
+.hamburger-content{
+  position: absolute;
+  display: none;
+  top:125px;
+  color: black;
+  background-color: white;
+}
+.hamburger-content div{
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  padding:15px;
+  border-bottom:1px solid black;
+}
+.hamburger-content{
+  width: 100%;
+}
+
+.hidden{
+  display: none;
+}
+.hidden a{
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.hidden ul{
+  list-style-type: none;
+}
+.hamburger-content-dark{
+  background-color: black;
+}
+.hamburger-content-dark a{
+  display: block;
+  padding: 15px;
+  color: blue;
+}
+/*header below section */
+.header-below{
+  display: grid;
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.search-bar-hidden{
+  display: none;
+}
+.header-below .header-below-search i{
+  color: white;
+  font-size: 2em;
+  width:100%;
+}
+.header-below>.header-below-search{
+  text-align: center;
+  background-color: black;
+  padding: 50px;
+}
+.header-below>.header-right-signin,
+.header-below>.header-right-contact{
+  width:100%;
+  margin: 0;
+}
+/*header below section */
+.search-bar-hidden{
+  width: 100%;
+}
+.search-bar-hidden>.search-block{
+  width: 100%;
+  padding: 0;
+}
+/*media queries */
+/*1164px */
+@media (max-width:1164px)
+{
+  .header-left-menu{
+    display: none;
+  }
+  .hamburger-menu-section{
+    display: block;
+  }
+  .header-right-section{
+    width: 80%;
+    padding:0;
+  }
+  .header-second{
+  display: none;
+}
+
+  .search-block{
+    width:78%;
+  }
+  .search-block button{
+    float:left;
+    width:40px;
+  }
+  .block-item-box input{
+    width: 90%;
+  }
+  .hamburger-menu-section{
+    margin-left:0;
+    padding: 0;
+    float: left;
+  }
+}
+/*header below section */
+
+
+/*header below section */
+
+/*924px */
+@media (max-width:924px)
+{
+  .showcase-content{
+    font-size: 10px;
+  }
+  .search-block input{
+    width: 80%;
+  }
+  .header-right-section{
+    width: 50%;
+  }
+  .header-below{
+    display: grid;
+  }
+  .header-right-section{
+    display: none;
+  }
+  .hamburger-menu-section{
+    display: none;
+  }
+  .hamburger-content{
+    top:250px;
+  }
+  .press-news-section>.news-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .sales-quotation{
+    top:5px;
+    position: relative;
+  }
+  .newproducts-section-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .interviews-section{
+    grid-template-columns: 1fr 1fr;
+  }
+  .interview-content{
+    margin-bottom: 20px;
+  }
+  
+  .footer-dropdown{
+    display: block;
+  }
+  .footer-dropdown>div{
+    padding: 20px;
+    font-weight: bold;
+  }
+  .footer-dropdown{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+  }
+  .footer-dropdown-content>ul{
+    list-style-type: none;
+  }
+  .footer-dropdown-content>ul>a>li{
+    margin-top:15px;
+  }
+  .about-site-section{
+    display: none;
+  }
+  
+}
+
+/*media 628px */
+@media (max-width:628px)
+{
+  .press-news-section>.news-content{
+    grid-template-columns: 1fr;
+  }
+  .sales-quotation{
+    width: 100%;
+    left: 0;
+    margin:0;
+    left:-12px;
+  }
+  .newproducts-section-content{
+    grid-template-columns: 1fr;
+  }
+  .newproducts-section-content>.product-card{
+    padding-top: 80px;
+  }
+  .subscribe-section-content{
+    grid-template-columns: 1fr;
+  }
+  .subscribe-section-content>div{
+    margin-bottom: 30px;
+    border:none;
+  }
+  .left-sub-section{
+    text-align: center;
+    margin:0;
+    padding: 0;
+  }
+  .data-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .data-card>.intro{
+    margin:auto;
+  }
+  .data-card>.intro>.photo-large{
+    margin: auto;
+    width: 60%;
+  }
+  #drill{
+height:30%; 
+  }
+  .interviews-section{
+  grid-template-columns: 1fr;
+}
+.interviews-section>.interview-content{
+  border-right: none;
+}
+  .showcase-content>h1{
+    font-size: 4.8em;
+  }
+  .showcase-content>.tagline{
+    font-size: 1.7em;
+  }
+  .showcase-content>button{
+    font-size: 2em;
+  }
+}
+
