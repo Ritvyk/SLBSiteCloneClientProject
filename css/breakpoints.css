@@ -140,6 +140,10 @@ i{
   .showcase-content{
     font-size: 10px;
   }
+  .footer-section{
+    display: grid;
+    
+  }
   .search-block input{
     width: 80%;
   }
